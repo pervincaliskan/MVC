@@ -1,0 +1,55 @@
+﻿@model IEnumerable<TasarimGiydirme.Models.Musteri>
+
+
+
+<h2>@ViewBag.Listele;</h2>
+
+<p>
+    @Html.ActionLink("Yeni Kayıt", "Yeni Kayıt")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Ad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SoyAd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DogTar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TCKimlikNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Adres)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoyAd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DogTar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TCKimlikNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Adres)
+        </td>
+        <td>
+            @Html.ActionLink("Düzenle", "Duzenle", new { id =item.Id}) |
+            @Html.ActionLink("Detaylar", "Detaylar", new { id = item.Id }) |
+            @Html.ActionLink("Sil", "Sil", new { id = item.Id })
+        </td>
+    </tr>
+}
+
+</table>
