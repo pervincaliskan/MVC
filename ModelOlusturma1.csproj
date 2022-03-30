@@ -190,8 +190,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Tasarım.cshtml" />
     <Content Include="Views\Home\MListele.cshtml" />
-    <Content Include="Views\Home\YeniKayit.cshtml" />
-    <Content Include="Views\Home\Duzenle.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

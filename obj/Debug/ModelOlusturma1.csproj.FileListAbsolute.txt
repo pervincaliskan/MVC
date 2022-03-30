@@ -1,0 +1,4 @@
+C:\Users\a\source\repos\Uygulamalar\ModelOluşturma1\obj\Debug\ModelOlusturma1.csproj.AssemblyReference.cache
+C:\Users\a\source\repos\Uygulamalar\ModelOluşturma1\obj\Debug\ModelOlusturma1.csproj.CoreCompileInputs.cache
+C:\Users\a\source\repos\Uygulamalar\ModelOluşturma1\obj\Debug\TasarimGiydirme.dll
+C:\Users\a\source\repos\Uygulamalar\ModelOluşturma1\obj\Debug\TasarimGiydirme.pdb
