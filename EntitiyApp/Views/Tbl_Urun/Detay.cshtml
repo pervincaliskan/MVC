@@ -1,0 +1,50 @@
+﻿@model EntitiyApp.Models.Tbl_Urun
+
+@{
+    ViewBag.Title = "Detay";
+}
+
+<h2>Detay</h2>
+
+<div>
+    <h4>Tbl_Urun</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.KategoriId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KategoriId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UrunAd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UrunAd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UrunFiyat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UrunFiyat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UrunAdet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UrunAdet)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.UrunId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

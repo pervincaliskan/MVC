@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Kategori-Ürün Yönetimi";
+}
+
+<div class="jumbotron">
+    <h1> ÜRÜN KATEGORİ UYGULAMASI</h1>
+</div>
+<div class="row">
+ <div  class="col-md-4">
+     <h2>@Html.ActionLink("Kategoriler", "Index", "Tbl_Kategoriler")</h2>
+            <p> Kategorilerle ilgili detaylandırma Yapmamızı Sağlar</p>
+  </div>
+      <div class="col-md-4">
+          <h2> @Html.ActionLink("Ürünler", "Index", "Tbl_Urun") </h2>
+         <p> ürünlerle ilgili detaylandırma Yapmamızı Sağlar</p>
+      </div>
+</div>

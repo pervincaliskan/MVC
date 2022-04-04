@@ -1,0 +1,51 @@
+﻿@model IEnumerable<EntitiyApp.Models.Tbl_Urun>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.KategoriId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UrunAd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UrunFiyat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UrunAdet)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.KategoriId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UrunAd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UrunFiyat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UrunAdet)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.UrunId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.UrunId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.UrunId })
+        </td>
+    </tr>
+}
+
+</table>
